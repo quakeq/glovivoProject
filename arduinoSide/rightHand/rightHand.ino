@@ -1,21 +1,25 @@
-int flexAmp[5];
+int flexAmp[5]; //array stores each finger's value
+const int numFing = 5; //easy to change number of fingers
 
 void setup() {
-  // put your setup code here, to run once:
+  //Average set serial to 9600
   Serial.begin(9600);
 }
 
 void loop() {
-  for (j = 0; j < 5; j++){
+  //For loop inputs the value of the flex sensors to flexAmp
+  for (j = 0; j < numFing; j++){
     flexAmp[j] = analogRead();
   }
-  for (i = 0; i < 10; i++){
-    if (flexAmp[i] >= 10){
-      Serial.write("Finger" + i +":" + flexAmp[i]);
+  //Writes out the flexAmp amount
+  for (i = 0; i < numFing; i++){
+    if (flexAmp[i] >= 5){
+      Serial.println("Finger" + i + ":" + flexAmp[i]);
     }
     else {
-      continue;
+      //If small bend, then it doesn't trigger a bang, meaning finger's sound doesn't play
+      Serial.println("Finger" + i + ":" + "OFF"); 
     }
   }
-  delay(100);
+  delay(100); //small delay
 }
