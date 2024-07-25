@@ -14,13 +14,10 @@ void loop() {
   //Writes out the flexAmp amount
   for (int i = 0; i < numFing; i++){
     if (touched[i] >= 10){
-      Serial.println(touched[i]);
-    }
-    else {
-      //If small bend, then it doesn't trigger a bang, meaning finger's sound doesn't play
-      Serial.println("Finger: OFF"); 
+      Serial.print(touched[i]); Serial.print(i); 
     }
   }
+  Serial.println(" ");
   
   delay(10); //small delay
 }
