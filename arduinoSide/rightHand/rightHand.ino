@@ -1,5 +1,4 @@
-int flexAmp[10];
-bool fingerOn[10] = false; 
+int flexAmp[5];
 
 void setup() {
   // put your setup code here, to run once:
@@ -7,15 +6,16 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  for (j = 0; j < 5; j++){
+    flexAmp[j] = analogRead();
+  }
   for (i = 0; i < 10; i++){
     if (flexAmp[i] >= 10){
-      fingerOn[i] = true;
+      Serial.write("Finger" + i +":" + flexAmp[i]);
     }
-    if (flexAmp[i] < 10){
-      fingerOn[i] = false;
+    else {
+      continue;
     }
   }
-  Flex. 
-  Serial.write()
+  delay(100);
 }
