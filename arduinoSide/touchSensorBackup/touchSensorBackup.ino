@@ -21,5 +21,6 @@ void loop() {
       Serial.println("Finger: OFF"); 
     }
   }
-  delay(100); //small delay
+  
+  delay(10); //small delay
 }
