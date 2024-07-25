@@ -9,7 +9,7 @@ void setup() {
 void loop() {
   //For loop inputs the value of the flex sensors to flexAmp
   for (j = 0; j < numFing; j++){
-    flexAmp[j] = analogRead();
+    flexAmp[j] = analogRead(j);
   }
   //Writes out the flexAmp amount
   for (i = 0; i < numFing; i++){
