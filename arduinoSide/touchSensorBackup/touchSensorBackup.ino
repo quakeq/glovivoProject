@@ -16,8 +16,11 @@ void loop() {
     if (touched[i] >= 10){
       Serial.print(touched[i]); Serial.print(i); 
     }
+    else{
+      Serial.print("0"); Serial.print(i);
+    }
   }
-  Serial.println(" ");
+    Serial.println(" ");
   
   delay(10); //small delay
 }
