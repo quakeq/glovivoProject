@@ -21,5 +21,6 @@ void loop() {
     }
   }
   Serial.println(" ");
+  
   delay(1); //small delay
 }
