@@ -14,10 +14,10 @@ void loop() {
   //Writes out the flexAmp amount
   for (int i = 0; i < numFing; i++){
     if (touched[i] >= 10){
-      Serial.print(touched[i]); Serial.print(" "); Serial.print(i+1); Serial.print(" ");
+      Serial.print(touched[i]); Serial.print(" "); Serial.print("1"); Serial.print(" ");
     }
     else{
-      Serial.print("0"); Serial.print(" "); Serial.print(i+1); Serial.print(" ");
+      Serial.print("0"); Serial.print(" "); Serial.print("0"); Serial.print(" "); 
     }
   }
   Serial.println(" ");
