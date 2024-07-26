@@ -1,5 +1,6 @@
 int analogPin = 1;
-
+int touched[2]; //bool array checks if each sensor is activated
+const int numFing = 2; //easy to change number of fingers
 
 // void loop()
 // {
@@ -18,7 +19,7 @@ int analogPin = 1;
 #define CAP1188_MISO  12
 #define CAP1188_CLK  13
 #define FORCE_SENSOR_PIN 36 // ESP32 pin GPIO36 (ADC0): the FSR and 10K pulldown are connected to A0
-
+#define FORCE_SENSOR_PIN 39
 
 Adafruit_CAP1188 cap = Adafruit_CAP1188();
 
@@ -34,10 +35,20 @@ void setup () {
 }
 
 void loop() {
-    int analogReading = analogRead(FORCE_SENSOR_PIN);
 
-  Serial.print("The force sensor value = ");
-  Serial.println(analogReading); // print the raw analog reading
+  for (int j = 0; j < numFing; j++){
+    touched[j] = analogRead(FORCE_SENSOR_PIN);
+  }
+  //Writes out the flexAmp amount
+  for (int i = 0; i < numFing; i++){
+    if (touched[i] >= 10){
+      Serial.print(touched[i]); Serial.print(" "); Serial.print("1"); Serial.print(" ");
+    }
+    else{
+      Serial.print("0"); Serial.print(" "); Serial.print("0"); Serial.print(" "); 
+    }
+  }
+  Serial.println(" "); // print the raw analog reading
 
   uint8_t touched = cap.touched();
 
@@ -53,3 +64,4 @@ void loop() {
   Serial.println();
   delay(50);
 }
+
