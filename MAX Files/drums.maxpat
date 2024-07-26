@@ -176,8 +176,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1317.0, 198.0, 56.0, 22.0 ],
-					"text" : "metro 10"
+					"patching_rect" : [ 1317.0, 198.0, 49.0, 22.0 ],
+					"text" : "metro 1"
 				}
 
 			}
@@ -261,7 +261,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1515.0, 395.0, 49.0, 22.0 ],
-					"text" : "read 12"
+					"text" : "read 0"
 				}
 
 			}
