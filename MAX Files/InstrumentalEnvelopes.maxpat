@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 34.0, 77.0, 1068.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -501,20 +501,21 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.324670791625977, 379.220775604248047, 36.0, 22.0 ],
-					"text" : "port f"
+					"patching_rect" : [ 475.324670791625977, 379.220775604248047, 35.0, 22.0 ],
+					"text" : "port j"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-40",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.571423530578613, 536.363631248474121, 43.0, 22.0 ],
-					"text" : "read 8"
+					"patching_rect" : [ 528.571423530578613, 536.363631248474121, 43.0, 36.0 ],
+					"text" : "read 22"
 				}
 
 			}
@@ -537,8 +538,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 315.584412574768066, 459.740255355834961, 74.0, 22.0 ],
-					"text" : "serial f 9600"
+					"patching_rect" : [ 315.584412574768066, 459.740255355834961, 80.0, 22.0 ],
+					"text" : "serial 115200"
 				}
 
 			}
