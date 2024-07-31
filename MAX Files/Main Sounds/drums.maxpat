@@ -336,8 +336,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1463.0, 239.0, 36.0, 22.0 ],
-					"text" : "port f"
+					"patching_rect" : [ 1463.0, 239.0, 39.0, 22.0 ],
+					"text" : "port h"
 				}
 
 			}
@@ -372,8 +372,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 1304.0, 319.0, 74.0, 22.0 ],
-					"text" : "serial f 9600"
+					"patching_rect" : [ 1304.0, 319.0, 67.0, 22.0 ],
+					"text" : "serial 9600"
 				}
 
 			}
