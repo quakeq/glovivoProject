@@ -447,8 +447,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1463.0, 239.0, 39.0, 22.0 ],
-					"text" : "port h"
+					"patching_rect" : [ 1464.0, 239.0, 35.0, 22.0 ],
+					"text" : "port j"
 				}
 
 			}
@@ -460,7 +460,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1515.0, 395.0, 49.0, 22.0 ],
-					"text" : "read 0"
+					"text" : "read -1"
 				}
 
 			}
@@ -483,8 +483,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 1304.0, 319.0, 77.0, 22.0 ],
-					"text" : "serial h 9600"
+					"patching_rect" : [ 1304.0, 319.0, 73.0, 22.0 ],
+					"text" : "serial j 9600"
 				}
 
 			}
