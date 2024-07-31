@@ -16,8 +16,8 @@ int flex[2];
 
 void setup() {
   // put your setup code here, to run once:
-  SerialBT.begin("esp32r");
-  Serial.begin(115200);
+  SerialBT.begin("ESP32RIGHT");
+  Serial.begin(9600);
   
 }
 
@@ -28,23 +28,23 @@ void loop() {
   touch[2] = analogRead(FSR_2);
   for (int i = 0; i < numFinger; i++){
     if (touch[i] >= 10){
-      Serial.print(touch[i]); Serial.print(" "); Serial.print("1"); Serial.print(" ");
+      SerialBT.print(touch[i]); SerialBT.print(" "); SerialBT.print("1"); SerialBT.print(" ");
     }
     else{
-      Serial.print("0"); Serial.print(" "); Serial.print("0"); Serial.print(" "); 
+      SerialBT.print("0"); SerialBT.print(" "); SerialBT.print("0"); SerialBT.print(" "); 
     }
   }
   flex[0] = analogRead(FLEX_0);
   flex[1] = analogRead(FLEX_1);
   for (int i = 0; i < numFlex; i++){
     if (flex[i] >= 10){
-      Serial.print(flex[i]); Serial.print(" "); Serial.print("1"); Serial.print(" ");
+      SerialBT.print(flex[i]); SerialBT.print(" "); SerialBT.print("1"); SerialBT.print(" ");
     }
     else{
-      Serial.print("0"); Serial.print(" "); Serial.print("0"); Serial.print(" "); 
+      SerialBT.print("0"); SerialBT.print(" "); SerialBT.print("0"); SerialBT.print(" "); 
     }
   }
-  Serial.println(" ");
+  SerialBT.println(" ");
 
   delay(50);
 }
