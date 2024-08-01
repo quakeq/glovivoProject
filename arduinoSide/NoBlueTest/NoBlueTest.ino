@@ -37,7 +37,7 @@ void loop() {
   flex[0] = analogRead(FLEX_0);
   flex[1] = analogRead(FLEX_1);
   for (int i = 0; i < numFlex; i++){
-    if (flex[i] >= 10){
+    if (flex[i] != 0){
       Serial.print(flex[i]); Serial.print(" "); Serial.print("1"); Serial.print(" ");
     }
     else{
@@ -46,5 +46,5 @@ void loop() {
   }
   Serial.println(" ");
 
-  delay(50);
+  delay(10);
 }
